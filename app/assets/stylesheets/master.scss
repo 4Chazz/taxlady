@@ -2,7 +2,7 @@
 
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  background: image_url('bg.jpg') no-repeat center center fixed;
+  background: image_url('bg2.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -17,15 +17,18 @@ h1 {
   font-size: 4rem;
 }
 
+
 .tagline-upper {
   font-size: 5rem;
   font-weight: 700;
   line-height: 1;
+  color: brown;
 }
 
 .tagline-lower {
   font-size: 1.2rem;
   line-height: 1;
+  color: brown;
 }
 
 .text-expanded {
