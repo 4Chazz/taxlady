@@ -1,12 +1,29 @@
 @import "bootstrap";
 
+.navbar a .navbar-brand a {
+  font-weight: bold;
+  color: red;
+  background-color: #FFFAF0;
+}
+
+.nav-item .nav-link {
+  color: green;
+}
+
+
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  background: image_url('bg2.jpg') no-repeat center center fixed;
+  background-color: #FFFAF0;
+}
+
+.hero {
+  background: image_url('hero.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  background-size: cover;
   -o-background-size: cover;
+  background-size: cover;
+  height: 1000px;
+  box-shadow: 0px 3px 8px #2a2a2a;
 }
 
 h1, h2, h3, h4, h5, h6, .text-heading {
@@ -17,18 +34,24 @@ h1 {
   font-size: 4rem;
 }
 
+/*tagline-upper text-center text-heading text-shadow mt-5 d-none d-lg-block">One Tax Lady</div>
+    <div class="tagline-lower text-center text-expanded text-shadow text-uppercase mb-5 d-none d-lg-block"*/
 
 .tagline-upper {
   font-size: 5rem;
   font-weight: 700;
   line-height: 1;
   color: brown;
+  text-align: center;
+  padding-bottom: 30px;
+
 }
 
 .tagline-lower {
   font-size: 1.2rem;
   line-height: 1;
   color: brown;
+  text-align: center;
 }
 
 .text-expanded {
@@ -54,12 +77,4 @@ h1 {
 hr.divider {
   border-color: #292b2c;
   max-width: 250px;
-}
-
-.map-container iframe {
-  pointer-events: none;
-}
-
-.map-container iframe.clicked {
-  pointer-events: auto;
 }

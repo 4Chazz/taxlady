@@ -28,21 +28,6 @@
     });
 
 
-
-    /*-------------------------------------
-        WOW js
-    -------------------------------------*/
-
-    // new WOW().init();
-
-    /*-------------------------------------
-        Slick Slider
-    -------------------------------------*/
-
-    // $('.schedule, .client-part').slick({
-    //   autoplay: true
-    // });
-
     /*-------------------------------------
         Scroll Top
     -------------------------------------*/
@@ -66,35 +51,7 @@
 
     $('.preloader-area').fadeOut('500');
 
-    /*-------------------------------------
-        parallax
-    -------------------------------------*/
 
-    // $('.banner-img').parallax("50%", 0.7);
-    // $('.fityourself-area').parallax("50%", 0.7);
-
-    /*-------------------------------------
-        Portfolio filter
-    -------------------------------------*/
-
-    // Active isotope with jQuery code
-
-    // $('.iso-content').isotope({
-    //  itemSelector: '.single-project',
-    //  layoutMode: 'fitRows'
-    // });
-
-    // Isotope click function
-
-    // $('.iso-nav ul li').click(function () {
-    //  $('.iso-nav ul li').removeClass('portfolio-active');
-    //  $(this).addClass('portfolio-active');
-    //  var selector = $(this).attr('data-filter');
-    //  $('.iso-content').isotope({
-    //    filter: selector
-    //  });
-    //  return false;
-    // });
   });
 }(jQuery));
 
