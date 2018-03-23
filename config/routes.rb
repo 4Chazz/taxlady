@@ -2,7 +2,8 @@ Rails.application.routes.draw do
 
   root 'bigpages#index'
 
-  root 'message#index'
+  root 'messages#index'
   resources :messages do
   end
 end
+
