@@ -16,6 +16,15 @@ body {
   background-color: #FFFAF0;
 }
 
+h2 {
+  /*h2 class="text-center text-lg text-uppercase my-0"*/
+  text-align: center;
+  font-size: 25px;
+  font-style: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .hero {
   background: image_url('hero.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -78,8 +87,70 @@ hr.divider {
   border-color: #292b2c;
   max-width: 250px;
 }
+.clear {
+    clear: both;
+}
+
+/*Contact form stuff*/
+.hidden { display: none; }
+.alert-error {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+font-size: .8em;
+}
+
+.alert-alert {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+font-size: .8em;
+}
+
+.alert-success {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: center;
+font-size: .8em;
+}
+
+.alert-notice {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+font-size: .8em;
+}
+
+/*Table*/
+
+td {
+  padding-right:20px
+}
+th {
+  text-align: center;
+}
+
+th{
+  text-align: center;
+}
+
+table {
+  /*table-layout: center;*/
+  border-spacing: 0;
+  text-align: left;
+  /*display: inline-table;*/
+  margin: auto;
+
+}
 
 footer {
   background-color: black;
   color: #FFFAF0;
+  margin: 0px;
+  padding-top: 60px;
+  padding-top: 60px;
 }

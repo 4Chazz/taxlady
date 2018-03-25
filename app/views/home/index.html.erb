@@ -1,0 +1,160 @@
+<!-- <div class="container"> -->
+<section id="home">
+  <div class="hero">
+  <!-- <div class="bg-faded p-4 my-4"> -->
+    <!-- Welcome Message -->
+    <!-- <div class="text-center mt-4">
+      <div class="text-heading text-muted text-lg">Welcome To</div>
+      <h1 class="my-2">One Tax Lady Tax Services</h1>
+      <div class="text-heading text-muted text-lg">By
+        <strong>Start Bootstrap</strong>
+      </div>
+    </div> -->
+  </div>
+</section>
+<!-- </div> -->
+
+  <!-- About Section -->
+<div class="container">
+  <section id="about">
+    <div class="p-4 my-4">
+      <hr class="divider">
+      <h2>ABOUT
+        <strong>About</strong>
+      </h2>
+      <hr class="divider">
+      <!-- <img class="img-fluid float-left mr-4 d-none d-lg-block" <%= image_tag "intro-pic.jpg" %> -->
+      <p>Our Mission is to provide clients with superior personalized tax services, accounting and consulting services by implementing practical solutions for our clients' diverse needs, we understand that our clients are the reason we are here today as a tax preparation office. We focus on the needs of our clients to promote integrity and fairness throughout our business.</p>
+      <p>As you know, for many taxpayers having their taxes prepared and filed is a very important event. That’s why they seek out a professional tax preparer for assistance. As a tax preparer we owe our customers the professionalism and fair treatment which they deserve and are paying for. This means making sure each customer clearly understands the process for completing and filing their yearly tax return. Our purpose will be to provide each customer with the understanding of the fees they are being charged and the different filing and product options available to them, including IRS direct options with no additional cost, so they can make an informed decision that is right for their financial situation.</p>
+      <p></p>
+
+    </div>
+  </section>
+<!-- </div> -->
+
+  <!-- SERVICES SECTION -->
+  <section id="services">
+    <div class="p-4 my-4">
+      <hr class="divider">
+      <h2>SERVICES
+        <!-- <strong>worth visitng</strong> -->
+      </h2>
+      <hr class="divider">
+      <img class="img-fluid float-left mr-4 d-none d-lg-block" <%= image_tag "services.jpg" %>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam soluta dolore voluptatem, deleniti dignissimos excepturi veritatis cum hic sunt perferendis ipsum perspiciatis nam officiis sequi atque enim ut! Velit, consectetur.</p>
+      <li>Personal Taxes</li>
+      <li>Small Businesses</li>
+      <p>Most taxpayers can choose to have their taxes professionally prepared and pay tax preparation and other related fees with their refund money. This is a very convenient way to pay the fees associated with their tax preparation and tax return filing without having to pay anything up front.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit totam libero expedita magni est delectus pariatur aut, aperiam eveniet velit cum possimus, autem voluptas. Eum qui ut quasi voluptate blanditiis?</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="p-4 my-4">
+      <hr class="divider">
+      <h2>CONTACT
+        <!-- <strong>showcase your content</strong> -->
+      </h2>
+      <hr class="divider">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam soluta dolore voluptatem, deleniti dignissimos excepturi veritatis cum hic sunt perferendis ipsum perspiciatis nam officiis sequi atque enim ut! Velit, consectetur.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam pariatur perspiciatis reprehenderit illo et vitae iste provident debitis quos corporis saepe deserunt ad, officia, minima natus molestias assumenda nisi velit?</p>
+    </hr>
+    </div>
+
+    <div class="p-1 my-1">
+      <table><tbody>
+        <h2> HOURS </h2>
+        <tr>
+          <td>
+            <p> Mon</p>
+          </td>
+          <td>
+            <p>9:00 am – 8:00 pm</p>
+          </td>
+        </tr>
+        <tr>
+          <td >
+            <p >Tue</p>
+          </td>
+          <td><p >9:00 am – 8:00 pm</p>
+          </td>
+        </tr>
+        <tr>
+          <td ><p>Wed</p></td>
+          <td><p>9:00 am – 8:00 pm</p></td>
+        </tr>
+        <tr>
+          <td ><p>Thu</p></td>
+          <td><p>9:00 am – 8:00 pm</p></td>
+        </tr>
+        <tr>
+          <td ><p>Fri</p></td>
+          <td><p>9:00 am – 8:00 pm</p></td>
+        </tr>
+        <tr>
+          <td ><p>Sat</p></td>
+          <td><p>9:00 am – 5:00 pm</p></td>
+        </tr>
+        <tr>
+          <td ><p>Sun</p></td>
+          <td><p>By Appointment</p></td>
+        </tr></tbody></table>
+    </div>
+      <br/>
+      <br/>
+    <div class="col-7">
+      <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal">
+      Get in Touch <br/>
+      </button>
+    </div>
+      <!-- Contact Form Part  MODAL-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title center" id="myModalLabel">Get In Touch</h4>
+          </div>
+          <%= form_for @contact, url: home_index_path do |f| %>
+            <div class="modal-body">
+              <%= f.label :name %></br>
+              <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
+
+              <%= f.label :email %></br>
+              <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br>
+
+              <%= f.label :message %></br>
+              <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area", placeholder: "Message"%></br>
+              <div class= "hidden">
+                <%= f.label :nickname %>
+                <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <%= f.submit 'Send Message', class: 'btn btn-primary' %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="col-md-6" id="flash-message">
+      <% flash.each do |message_type, message| %>
+        <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
+      <% end %>
+    </div> -->
+  </section>
+
+
+<br/>
+<br/>
+<br/>
+<footer class="text-center">
+  <div class="container">
+    <p class="m-0">Copyright &copy; 2018 Proudly created by  <a href="http://chastitylawson.getforge.io">Chastity Lawson</a><br /></p>
+  </div>
+</footer>
