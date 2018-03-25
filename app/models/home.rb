@@ -8,6 +8,7 @@ class Home < MailForm::Base
     {
       :subject => "New CONTACT Message",
       :to => "chazzb@ymail.com",
+      # :to => "ptaylor1024@yahoo.com",
       :from => %("#{name}" <#{email}>)
     }
   end
