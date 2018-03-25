@@ -62,3 +62,5 @@ gem "animate-rails"
 gem 'mail_form'
 
 gem 'dotenv-rails', groups: [:development, :test]
+
+gem 'figaro'
