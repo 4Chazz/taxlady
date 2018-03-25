@@ -57,3 +57,6 @@ gem 'popper_js', '~> 1.12', '>= 1.12.9'
 
 #To see if smooth scroll works
 gem "animate-rails"
+
+#Send Email from Form
+gem 'mail_form'
