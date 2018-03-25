@@ -4,6 +4,10 @@ class HomeController < ApplicationController
     @contact = Home.new(params[:home])
   end
 
+  def new
+    @contact = Home.new
+  end
+
   def create
     @contact = Home.new(params[:home])
     @contact.request = request
@@ -12,11 +16,11 @@ class HomeController < ApplicationController
         #re-initiaize Home object for cleared form
         @contact = Home.new
         format.html {render 'index'}
-        flash[:success] = "We have received your message and will be in touch soon!"
+        flash.now[:notice] = 'Thank you for your message. We will contact you soon!'
 
       else
-        flash[:error] = "Please complete all fields."
-        render :new
+        flash.now[:error] = "Please complete all fields."
+        redirect_to root_path
       end
     end
   end

@@ -60,3 +60,5 @@ gem "animate-rails"
 
 #Send Email from Form
 gem 'mail_form'
+
+gem 'dotenv-rails', groups: [:development, :test]
