@@ -13,14 +13,14 @@
   </div>
 </section>
 <!-- </div> -->
-
+<br/>
   <!-- About Section -->
 <div class="container">
   <section id="about">
     <div class="p-4 my-4">
       <hr class="divider">
       <h2>ABOUT
-        <strong>About</strong>
+        <!-- <strong>About</strong> -->
       </h2>
       <hr class="divider">
       <!-- <img class="img-fluid float-left mr-4 d-none d-lg-block" <%= image_tag "intro-pic.jpg" %> -->
@@ -30,6 +30,10 @@
 
     </div>
   </section>
+  <br/>
+  <br/>
+  <br/>
+
 <!-- </div> -->
 
   <!-- SERVICES SECTION -->
@@ -48,6 +52,8 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit totam libero expedita magni est delectus pariatur aut, aperiam eveniet velit cum possimus, autem voluptas. Eum qui ut quasi voluptate blanditiis?</p>
     </div>
   </section>
+  <br/>
+  <br/>
 
   <!-- CONTACT -->
   <section id="contact">
@@ -101,21 +107,19 @@
           <td><p>By Appointment</p></td>
         </tr></tbody></table>
     </div>
-      <br/>
-      <br/>
     <div class="col-7">
       <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal">
       Get in Touch <br/>
       </button>
     </div>
       <!-- Contact Form Part  MODAL-->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal animated bounceInLeft" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">×</span>
-            </button>
+            </button> -->
             <h4 class="modal-title center" id="myModalLabel">Get In Touch</h4>
           </div>
           <%= form_for @contact, url: home_index_path do |f| %>
@@ -141,14 +145,8 @@
         </div>
       </div>
     </div>
-
-    <!-- <div class="col-md-6" id="flash-message">
-      <% flash.each do |message_type, message| %>
-        <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
-      <% end %>
-    </div> -->
   </section>
-
+</div>
 
 <br/>
 <br/>

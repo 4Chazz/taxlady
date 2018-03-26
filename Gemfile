@@ -64,3 +64,8 @@ gem 'mail_form'
 gem 'dotenv-rails', groups: [:development, :test]
 
 gem 'figaro'
+
+#Jazz up website
+gem 'animate.css-rails', '~> 3.2.0'
+
+gem 'font-awesome-rails'

@@ -1,4 +1,6 @@
 @import "bootstrap";
+@import "font-awesome";
+@import "animate";
 
 .navbar a .navbar-brand a {
   font-weight: bold;
@@ -145,6 +147,18 @@ table {
   /*display: inline-table;*/
   margin: auto;
 
+}
+
+/*Modal*/
+
+.btn {
+  background-color: orange;
+  color: black;
+}
+
+.btn:hover {
+  background-color: #ffbb5b;
+  color: black;
 }
 
 footer {

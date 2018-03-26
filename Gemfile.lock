@@ -41,6 +41,7 @@ GEM
       tzinfo (~> 1.1)
     animate-rails (1.0.10)
       rails
+    animate.css-rails (3.2.0)
     arel (7.1.4)
     autoprefixer-rails (8.1.0.1)
       execjs
@@ -69,6 +70,8 @@ GEM
     ffi (1.9.23)
     figaro (1.1.1)
       thor (~> 0.14)
+    font-awesome-rails (4.7.0.3)
+      railties (>= 3.2, < 5.2)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     i18n (0.9.5)
@@ -180,11 +183,13 @@ PLATFORMS
 
 DEPENDENCIES
   animate-rails
+  animate.css-rails (~> 3.2.0)
   bootstrap (~> 4.0.0.alpha6)
   byebug
   coffee-rails (~> 4.2)
   dotenv-rails
   figaro
+  font-awesome-rails
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
