@@ -14,11 +14,11 @@ class HomeController < ApplicationController
     if @contact.deliver
 
       @contact = Home.new
-      flash.now[:notice] = 'Thank you for your message. We will contact you soon!'
+      # flash.now[:notice] = 'Thank you for your message. We will contact you soon!'
       redirect_to root_path
 
     else
-      flash.now[:error] = "Please complete all fields."
+      # flash.now[:error] = "Please complete all fields."
       render :new
     end
   end
