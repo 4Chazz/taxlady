@@ -35,9 +35,11 @@ h2 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 600px;
+  height: 1000px;
   box-shadow: 0px 3px 8px #2a2a2a;
 }
+
+
 
 h1, h2, h3, h4, h5, h6, .text-heading {
   font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -91,9 +93,7 @@ hr.divider {
   border-color: #292b2c;
   max-width: 250px;
 }
-.clear {
-    clear: both;
-}
+
 
 /*Contact form stuff*/
 .hidden { display: none; }
