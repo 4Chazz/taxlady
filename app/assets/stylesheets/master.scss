@@ -12,12 +12,40 @@
   color: green;
 }
 
-a {
-  color: brown;
+.navbar-toggler {
+    border-color: black;
+    background-color: #FFFAF0;
 }
+
+ .navbar-toggler-icon {
+  float: left;
+}
+
+.bg-faded {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+a {
+  color: white;
+}
+
+
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  background-color: #FFFAF0;
+  /*background-color: #FFFAF0;*/
+  background: image_url('hero2.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.welcome {
+  color: brown;
 }
 
 h2 {
@@ -54,17 +82,17 @@ h1 {
   font-size: 5rem;
   font-weight: 700;
   line-height: 1;
-  color: brown;
+  color: white;
   text-align: center;
   padding-bottom: 30px;
-
 }
 
 .tagline-lower {
   font-size: 1.2rem;
   line-height: 1;
-  color: brown;
+  color: white;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .text-expanded {
@@ -79,13 +107,7 @@ h1 {
   font-size: 1.25rem;
 }
 
-.bg-faded {
-  background-color: rgba(255, 255, 255, 0.9);
-}
 
-.bg-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
-}
 
 hr.divider {
   border-color: #292b2c;
@@ -117,7 +139,6 @@ table {
   text-align: left;
   /*display: inline-table;*/
   margin: auto;
-
 }
 
 /*Modal*/
@@ -126,6 +147,7 @@ table {
   background-color: orange;
   color: black;
 }
+
 .form-control {
   width: 100%;
 }
